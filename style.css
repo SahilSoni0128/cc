@@ -1,0 +1,980 @@
+/* ---------- Import Google Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital@1&family=Sacramento&display=swap');
+
+/* ----------Base---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ---------Navbar CSS-------- */
+nav {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+
+    padding: 0.5rem 2.5rem;
+}
+
+.vl1 {
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    left: 170px;
+    align-items: center;
+
+    background-color: #215391;
+
+    border: 1px solid #215391;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+    margin: 0 -1rem;
+}
+
+.menu a {
+    margin: 0 1rem;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #215391;
+}
+
+.menu a:hover {
+    color: crimson;
+}
+
+#login-button {
+    color: white;
+    background: #215391;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    cursor: pointer;
+
+    padding: 5px 15px;
+}
+
+.hamburger {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.hamburger span {
+    color: black;
+    font-size: 2rem;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+
+    padding-top: 6rem;
+    opacity: 0;
+    transform: translateY(-100%);
+    background-color: white;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 1rem;
+    color: #215391;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* ---------- Section1 CSS ----------- */
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.section1 a {
+    text-decoration: none;
+}
+
+.section1heading1 {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 51px;
+    text-align: left;
+
+    color: #481E7E;
+}
+
+.section1heading2 {
+    color: #FFC42D;
+}
+
+.section1button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    width: 250px;
+    height: 50px;
+
+    background: linear-gradient(92.02deg, #65338A 6.54%, #0688A2 113.01%);
+    box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+
+.section1img {
+    width: 100%;
+}
+
+/* ----------- Here Section2 CSS --------------- */
+.section2 {
+    margin-top: 30px;
+}
+
+.section2-img {
+    display: block;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section2text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 51px;
+    display: block;
+
+    text-align: center;
+
+    color: #0290A5;
+
+}
+
+/* ----------- Here Section3 CSS ------------ */
+.section3img {
+    width: 100%;
+}
+
+
+/* ------------ Here Section4 CSS ----------- */
+.section4 {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.section4text1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 38px;
+    line-height: 51px;
+    width: 50%;
+    text-align: left;
+    position: absolute;
+
+    color: #63368B;
+}
+
+.section4icon {
+    margin-left: 220px;
+    margin-top: 150px;
+}
+
+.section4text2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 120px;
+    text-align: center;
+
+    color: #CC6F02;
+
+}
+
+.section4part1 {
+    margin-top: 60px;
+    display: block;
+}
+
+.section4img {
+    width: 50%;
+}
+
+/* ----------- Scrollbar ------------ */
+.scrollbar {
+    margin-top: 50px;
+    float: left;
+    height: 298px;
+    width: 15px;
+    overflow-y: scroll;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+
+#style-2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+    background-color: #63368B;
+}
+
+/* ----------- Section5 CSS ---------- */
+.section5 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.section5part1 h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: left;
+
+    color: #63368B;
+}
+
+.section5part1 h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 61px;
+
+    text-align: left;
+
+    color: #FFC42D;
+}
+
+.section5part1 p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+
+    text-align: left;
+
+    color: #63368B;
+}
+
+.section5part2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------------- Here Section7 CSS -------------- */
+.section7 {
+    /* max-width: 100%; */
+    background-image: url(images/section7-img.png);
+    background-size: 100% 100%;
+}
+
+.section7 h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+    padding-top: 150px;
+
+    color: #FFC42D;
+}
+
+.cards {
+    display: flex;
+    gap: 30%;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    justify-content: center;
+}
+
+.silver-card {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.platinum-card {
+    width: 300px;
+    margin-top: 50px;
+}
+
+.gold-card {
+    width: 300px;
+    margin-top: 20px;
+}
+
+#silver-content {
+    position: relative;
+    top: 50%;
+    margin: 30px;
+    width: 100%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+
+    color: #FFFFFF;
+}
+
+#silver-content span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: thin;
+    font-size: 12px;
+}
+
+#gold-content {
+    position: relative;
+    top: 50%;
+    margin: 30px;
+    width: 100%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+
+    color: #FFC154;
+    ;
+}
+
+#gold-content span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: thin;
+    font-size: 12px;
+}
+
+#platinum-content {
+    position: relative;
+    top: 50%;
+    margin: 30px;
+    width: 100%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+
+    color: #323232;
+}
+
+#platinum-content span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #E5E5E5;
+}
+
+/* --------- Here Section8 CSS ---------- */
+.section8 {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section8 button {
+    color: #4FA6C7;
+    background-color: white;
+    width: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    border: 2px solid #4FA6C7;
+    box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+/* ---------------- Here Section9 CSS --------------- */
+::selection {
+    background: #7d2ae8;
+    color: #fff;
+}
+
+.accordion {
+    display: flex;
+    max-width: 1010px;
+    width: 100%;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 25px;
+    /* padding: 45px 90px 45px 60px; */
+}
+
+.accordion .image-box {
+    height: 360px;
+    width: 300px;
+}
+
+.accordion .image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.accordion .accordion-text {
+    width: 60%;
+}
+
+.accordion .accordion-text .title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Montserrat';
+}
+
+.accordion .accordion-text .faq-text {
+    margin-top: 25px;
+    height: 263px;
+    overflow-y: auto;
+}
+
+.faq-text::-webkit-scrollbar {
+    display: none;
+}
+
+.accordion .accordion-text li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.accordion-text li .question-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-text li .question-arrow .question {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.accordion-text li .question-arrow .arrow {
+    font-size: 20px;
+    color: #595959;
+    transition: all 0.3s ease;
+}
+
+.accordion-text li.showAnswer .question-arrow .arrow {
+    transform: rotate(-180deg);
+}
+
+.accordion-text li:hover .question-arrow .question,
+.accordion-text li:hover .question-arrow .arrow {
+    color: #323232;
+}
+
+.accordion-text li.showAnswer .question-arrow .question,
+.accordion-text li.showAnswer .question-arrow .arrow {
+    color: #323232;
+}
+
+.accordion-text li .line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-text li p {
+    width: 92%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #595959;
+    display: none;
+}
+
+.accordion-text li.showAnswer p {
+    display: block;
+}
+
+/* ---------------------- Here Section10 CSS Swiper ---------------- */
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+
+.feedback{
+    position: absolute;
+    width: 100%;
+}
+
+.feedback p{
+    width: 70%;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.client-profile{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+.client-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* ------------- Here Footer CSS ------------- */
+.ft-container {
+    width: 100%;
+    margin-top: 100px;
+    min-height: 250px;
+    background-color: black;
+}
+
+.footer-links {
+    padding-top: 30px;
+    padding-left: 60px;
+}
+
+.footer-links a {
+    display: block;
+    line-height: 30px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #FFFAD0;
+}
+
+.footer-heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: left;
+
+    color: #EFEAC3;
+}
+
+.ft-container hr {
+    color: #FFFAD0;
+
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.social-link1 {
+    width: 50px;
+    height: 40px;
+}
+
+.social-link2 {
+    width: 50px;
+    height: 40px;
+}
+
+.social-link3 {
+    width: 50px;
+    height: 40px;
+}
+
+.social-links {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.social-links a {
+    margin-left: 20px;
+}
+
+
+/* --------------- MEDIA QUERIES BELOW 👇 ------------------ */
+/* --------Navbar Media Queries--------- */
+
+@media (min-width: 1084px) {
+
+    /* ------------Navigation bar Media Queries------------ */
+    .mobile-menu,
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+}
+
+/* -------- Hide vertical line using media query ---------- */
+
+@media (max-width: 1084px) {
+    .vl1 {
+        display: none;
+    }
+}
+
+/* ------------ Section1 Media Queries from pixels 1084 to pixels 768------------ */
+@media (max-width: 1084px) and (min-width: 768px) {
+    .section1 {
+        display: block;
+    }
+
+    .section1heading1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .section1button {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .section1img {
+        width: 100%;
+        /* padding: 30px; */
+    }
+}
+
+/* ------------ Section1 Media Queries ------------ */
+@media (max-width: 768px) and (min-width: 280px) {
+    .section1 {
+        display: block;
+    }
+
+    .branding-image {
+        width: 20%;
+        height: 20%;
+    }
+
+    .section1heading1 {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .section1button {
+        width: 100%;
+
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .section1img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+/* --------------- Section2 Media Queries -------------- */
+@media (max-width: 768px) and (min-width: 280px) {
+
+    .section2 {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+
+    .section2-img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .section2 p {
+        font-size: 20px;
+    }
+
+}
+
+/* ------------ Section3 Media Queries -------------- */
+/* @media (max-width: 1084px) and (min-width: 768px) {
+    .section3img {
+        width: 100%;
+    }
+} */
+
+/* ------------- Section4 Media Queries ------------- */
+@media (max-width: 1084px) and (min-width: 768px) {
+
+    .section4 {
+        display: block;
+        /* justify-content: space-evenly; */
+    }
+
+    .section4part1 {
+        display: flex;
+    }
+
+    .section4text1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section4text2 {
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .section4icon {
+        margin-left: 0px;
+    }
+
+    .section4img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 450px) {
+
+    .section4 {
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .section4text1 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section4part1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .section4text2 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .section4icon {
+        margin-left: 0px;
+    }
+
+    .section4img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 450px) and (min-width: 250px) {
+
+    .section4 {
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    .section4text1 {
+        font-size: 14px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .section4part1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .section4text2 {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .section4icon {
+        width: 30px;
+        height: 10px;
+        margin-left: 0px;
+    }
+
+    .section4img {
+        width: 100%;
+    }
+
+    .scrollbar {
+        height: 100px;
+        width: 15px;
+    }
+
+}
+
+/* ------------ Here Section8 Media Queries ------------ */
+@media (max-width: 538px) {
+    .section8 {
+        width: 100%;
+        height: auto;
+    }
+
+    .section8 button {
+        width: 15%;
+        font-size: 8px;
+    }
+}
+
+
+/* -------------  Here Section9 Media Queries ----------- */
+@media (max-width: 994px) {
+    /* body {
+        padding: 40px 20px;
+    } */
+
+    .accordion {
+        max-width: 100%;
+        padding: 45px 60px 45px 60px;
+    }
+
+    .accordion .image-box {
+        height: 360px;
+        width: 220px;
+    }
+
+    .accordion .accordion-text {
+        width: 63%;
+    }
+}
+
+@media (max-width: 820px) {
+    .accordion {
+        flex-direction: column;
+    }
+
+    .accordion .image-box {
+        height: 360px;
+        width: 300px;
+        width: 100%;
+        border-radius: 25px;
+        padding: 30px;
+    }
+
+    .accordion .accordion-text {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 538px) {
+    .accordion {
+        padding: 25px;
+    }
+
+    .accordion-text li p {
+        width: 98%;
+    }
+}
